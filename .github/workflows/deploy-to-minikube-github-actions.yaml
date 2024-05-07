@@ -23,8 +23,7 @@ jobs:
       run:
         kubectl apply -f k8s-node-app.yaml
     - name: Wait for pod to start
-      run: |
-        run: sleep 5
+      run: sleep 5
     - name: Test service URLs
       run: |
           minikube service list
